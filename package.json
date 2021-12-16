@@ -1,0 +1,14 @@
+{
+  "name": "cf_dns_sdk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "ts-node": "^10.2.1",
+    "typescript": "4.3.5"
+  }
+}
