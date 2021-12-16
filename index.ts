@@ -126,7 +126,7 @@ export const CreateDNS = async ({
       return { errorMessages: data.messages };
     }
 
-    return data.result;
+    return { result: data.result };
   } catch (error: any) {
     return { errorMessages: error.response?.data || error.message };
   }
@@ -200,7 +200,7 @@ export const UpdateDNS = async ({
       return { errorMessages: data.messages };
     }
 
-    return data.result;
+    return { result: data.result };
   } catch (error: any) {
     return { errorMessages: error.response?.data || error.message };
   }
@@ -226,7 +226,7 @@ export const DeleteDNS = async (id: string) => {
       return { errorMessages: data.messages };
     }
 
-    return data.result;
+    return { result: data.result };
   } catch (error: any) {
     return { errorMessages: error.response?.data || error.message };
   }
